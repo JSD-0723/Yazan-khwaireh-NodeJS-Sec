@@ -1,0 +1,12 @@
+html 
+  head 
+    title New Book
+    
+  body
+    a(href="/books") Return to books page
+    form(action="/books", method="POST")
+      label(for="name" style={display:'block'}) Name
+      input(type="text" name="name" id="name" style={display:'block'})
+      if error
+        p(style={color:'red'}) #{error}
+      button(type="submit") Create Book
