@@ -1,0 +1,12 @@
+html 
+  head 
+    title Book #{book.id}
+  
+   body
+    a(href="/data/books") Back to books
+    if error 
+      p #[span(style={color: "red"}) #{error}]
+    else
+      h1 Book #{book.id}
+      p The name of the book: #[span(style={color: "red"}) #{book.name}]
+   
