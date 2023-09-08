@@ -3,8 +3,8 @@ html
     title New Book
     
   body
-    a(href="/data/books") Return to books page
-    form(action="/data/books", method="POST")
+    a(href="/books") Return to books page
+    form(action="/books", method="POST")
       label(for="name" style={display:'block'}) Name
       input(type="text" name="name" id="name" style={display:'block'})
       if error

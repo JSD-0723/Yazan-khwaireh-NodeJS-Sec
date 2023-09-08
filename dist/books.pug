@@ -10,6 +10,6 @@ html
     ul 
       each book in books
    
-        li The id of the book: #[span(style={color: "red"}) #{book.id}] and the name of the book: #[a(href="/data/books" + book.id, style={color: "red"}) #{book.name}] 
+        li The id of the book: #[span(style={color: "red"}) #{book.id}] and the name of the book: #[a(href="/books/" + book.id, style={color: "red"}) #{book.name}] 
 
     a(href="/add-book") Add a new book
